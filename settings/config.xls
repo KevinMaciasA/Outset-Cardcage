@@ -1,0 +1,13 @@
+Name	Serial number (SN)	Hex file
+PWR	55FF6B066675544919421587	PowerControl.hex
+SM	55FF6B066675544915231887	SystemManager.hex
+DC	55FF69066675544923592587	DialysisControl.hex
+DM	50FF6E066675545706321487	DialysisMonitor.hex
+WS		Sensor.hex
+DS		Sensor.hex
+WC		WaterPrepControl.hex
+WA		ActuatorLower.hex
+WM		WaterPrepMonitor.hex
+DA		ActuatorUpper.hex
+WH		Heater.hex
+DH		Heater.hex
