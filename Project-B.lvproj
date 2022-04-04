@@ -20,11 +20,17 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="controls" Type="Folder" URL="../controls">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="controls" Type="Folder">
+			<Item Name="Data.ctl" Type="VI" URL="../controls/Data.ctl"/>
+			<Item Name="ID.ctl" Type="VI" URL="../controls/ID.ctl"/>
+			<Item Name="TCP states.ctl" Type="VI" URL="../controls/TCP states.ctl"/>
+			<Item Name="UI Data.ctl" Type="VI" URL="../controls/UI Data.ctl"/>
 		</Item>
-		<Item Name="handlers" Type="Folder" URL="../handlers">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="handlers" Type="Folder">
+			<Item Name="handler tester.vi" Type="VI" URL="../handlers/handler tester.vi"/>
+			<Item Name="settings handler.vi" Type="VI" URL="../handlers/settings handler.vi"/>
+			<Item Name="TCP seq handler.vi" Type="VI" URL="../handlers/TCP seq handler.vi"/>
+			<Item Name="TCP SSH.vi" Type="VI" URL="../handlers/TCP SSH.vi"/>
 		</Item>
 		<Item Name="Project Documentation" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
@@ -55,15 +61,31 @@
 			</Item>
 			<Item Name="Queued Message Handler Documentation.html" Type="Document" URL="../documentation/Queued Message Handler Documentation.html"/>
 		</Item>
-		<Item Name="settings" Type="Folder" URL="../settings">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="settings" Type="Folder">
+			<Item Name="config.xls" Type="Document" URL="../settings/config.xls"/>
+			<Item Name="settings tester.vi" Type="VI" URL="../settings/settings tester.vi"/>
+			<Item Name="settings.ini" Type="Document" URL="../settings/settings.ini"/>
 		</Item>
 		<Item Name="styles" Type="Folder">
 			<Item Name="colors.vi" Type="VI" URL="../styles/colors.vi"/>
 		</Item>
-		<Item Name="support" Type="Folder" URL="../support">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="support" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="Message Queue" Type="Folder">
+				<Item Name="Message Queue.lvlib" Type="Library" URL="../support/Message Queue/Message Queue.lvlib"/>
+			</Item>
+			<Item Name="User Event - Stop" Type="Folder">
+				<Item Name="User Event - Stop.lvlib" Type="Library" URL="../support/User Event - Stop/User Event - Stop.lvlib"/>
+			</Item>
+			<Item Name="button painter (SubVI).vi" Type="VI" URL="../support/button painter (SubVI).vi"/>
+			<Item Name="Check Loop Error.vi" Type="VI" URL="../support/Check Loop Error.vi"/>
+			<Item Name="cmd tester.vi" Type="VI" URL="../support/cmd tester.vi"/>
+			<Item Name="Command builder.vi" Type="VI" URL="../support/Command builder.vi"/>
+			<Item Name="console-log.rtf" Type="Document" URL="../support/console-log.rtf"/>
+			<Item Name="Error Handler - Event Handling Loop.vi" Type="VI" URL="../support/Error Handler - Event Handling Loop.vi"/>
+			<Item Name="Error Handler - Message Handling Loop.vi" Type="VI" URL="../support/Error Handler - Message Handling Loop.vi"/>
+			<Item Name="Programer.vi" Type="VI" URL="../support/Programer.vi"/>
+			<Item Name="string pattern counter.vi" Type="VI" URL="../support/string pattern counter.vi"/>
 		</Item>
 		<Item Name="GUI.vi" Type="VI" URL="../GUI.vi"/>
 		<Item Name="JTAG.vi" Type="VI" URL="../JTAG.vi"/>
@@ -117,6 +139,7 @@
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="Stall Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Stall Data Flow.vim"/>
 				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
