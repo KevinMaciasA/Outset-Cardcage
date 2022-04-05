@@ -90,6 +90,7 @@
 		<Item Name="GUI.vi" Type="VI" URL="../GUI.vi"/>
 		<Item Name="JTAG.vi" Type="VI" URL="../JTAG.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="string to bytes (SubVI).vi" Type="VI" URL="../handlers/string to bytes (SubVI).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
