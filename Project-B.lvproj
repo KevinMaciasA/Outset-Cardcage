@@ -22,14 +22,14 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="controls" Type="Folder">
 			<Item Name="Data.ctl" Type="VI" URL="../controls/Data.ctl"/>
+			<Item Name="ID Selector.ctl" Type="VI" URL="../controls/ID Selector.ctl"/>
 			<Item Name="ID.ctl" Type="VI" URL="../controls/ID.ctl"/>
 			<Item Name="TCP states.ctl" Type="VI" URL="../controls/TCP states.ctl"/>
 			<Item Name="UI Data.ctl" Type="VI" URL="../controls/UI Data.ctl"/>
 		</Item>
 		<Item Name="handlers" Type="Folder">
+			<Item Name="config handler.vi" Type="VI" URL="../handlers/config handler.vi"/>
 			<Item Name="handler tester.vi" Type="VI" URL="../handlers/handler tester.vi"/>
-			<Item Name="settings handler.vi" Type="VI" URL="../handlers/settings handler.vi"/>
-			<Item Name="TCP seq handler.vi" Type="VI" URL="../handlers/TCP seq handler.vi"/>
 			<Item Name="TCP SSH.vi" Type="VI" URL="../handlers/TCP SSH.vi"/>
 		</Item>
 		<Item Name="Project Documentation" Type="Folder">
@@ -87,11 +87,13 @@
 			<Item Name="Programer.vi" Type="VI" URL="../support/Programer.vi"/>
 			<Item Name="string pattern counter.vi" Type="VI" URL="../support/string pattern counter.vi"/>
 			<Item Name="string to bytes (SubVI).vi" Type="VI" URL="../handlers/string to bytes (SubVI).vi"/>
+			<Item Name="word finder.vi" Type="VI" URL="../support/word finder.vi"/>
+			<Item Name="To ID (SubVI).vi" Type="VI" URL="../support/To ID (SubVI).vi"/>
 		</Item>
-		<Item Name="delete later.vi" Type="VI" URL="../delete later.vi"/>
 		<Item Name="GUI.vi" Type="VI" URL="../GUI.vi"/>
 		<Item Name="JTAG.vi" Type="VI" URL="../JTAG.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="newGUI.vi" Type="VI" URL="../newGUI.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -115,7 +117,6 @@
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
-				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
@@ -142,7 +143,6 @@
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="Stall Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Stall Data Flow.vim"/>
-				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="TCP Get Raw Net Object.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Get Raw Net Object.vi"/>
@@ -155,6 +155,7 @@
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="settings handler.vi" Type="VI" URL="../handlers/settings handler.vi"/>
 			<Item Name="TCPSSH~1.VI" Type="VI" URL="../handlers/TCPSSH~1.VI"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
