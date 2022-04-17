@@ -68,8 +68,11 @@
 			<Item Name="Queued Message Handler Documentation.html" Type="Document" URL="../documentation/Queued Message Handler Documentation.html"/>
 		</Item>
 		<Item Name="settings" Type="Folder">
+			<Item Name="4.9.12.6034.ini" Type="Document" URL="../settings/4.9.12.6034.ini"/>
+			<Item Name="4.9.12.XXXX.ini" Type="Document" URL="../settings/4.9.12.XXXX.ini"/>
+			<Item Name="Available parts Display.vi" Type="VI" URL="../settings/Available parts Display.vi"/>
+			<Item Name="get part numbers.vi" Type="VI" URL="../settings/get part numbers.vi"/>
 			<Item Name="hexfiles.xls" Type="Document" URL="../settings/hexfiles.xls"/>
-			<Item Name="settings.ini" Type="Document" URL="../settings/settings.ini"/>
 		</Item>
 		<Item Name="styles" Type="Folder">
 			<Item Name="colors.vi" Type="VI" URL="../styles/colors.vi"/>
@@ -107,7 +110,6 @@
 			<Item Name="SSH Putty.vi" Type="VI" URL="../handlers/SSH Putty.vi"/>
 		</Item>
 		<Item Name="cardcage.ico" Type="Document" URL="../cardcage.ico"/>
-		<Item Name="delete later.vi" Type="VI" URL="../support/delete later.vi"/>
 		<Item Name="GUI.vi" Type="VI" URL="../GUI.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -179,31 +181,33 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Cardcage/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/cardcage.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{AC79F507-32BA-4695-A0A2-476F827BFB20}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F6B753DF-9B4F-4057-8189-589DD5AE57A3}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/settings/settings.ini</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/settings/hexfiles.xls</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/settings/hexfiles.xls</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/GUI.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/GUI.vi</Property>
-				<Property Name="Source[3].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[3].type" Type="Str">VI</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/dll's/libssh2lv-x64.dll</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/dll's/libssh2lv-x64.dll</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/dll's/libssh2lv.dll</Property>
 				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dll's/libssh2lv.dll</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dll's/libssh2lv.dylib</Property>
 				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/dll's/libssh2lv.dylib</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/dll's/libssh2lv.so</Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/dll's/libssh2lv.so</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/settings/4.9.12.6034.ini</Property>
 				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">8</Property>
+				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/settings/4.9.12.XXXX.ini</Property>
+				<Property Name="SourceCount" Type="Int">9</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Cardcage</Property>
 				<Property Name="TgtF_internalName" Type="Str">Cardcage</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">JVS © 2012 </Property>
