@@ -114,6 +114,8 @@
 			<Item Name="Add heather.vi" Type="VI" URL="../support/Add heather.vi"/>
 			<Item Name="Basic Auth generator.vi" Type="VI" URL="../support/Basic Auth generator.vi"/>
 			<Item Name="Send to Tulip.vi" Type="VI" URL="../support/Send to Tulip.vi"/>
+			<Item Name="Update their Tulip.vi" Type="VI" URL="../support/Update their Tulip.vi"/>
+			<Item Name="Tulip handler for Outset table.vi" Type="VI" URL="../support/Tulip handler for Outset table.vi"/>
 		</Item>
 		<Item Name="cardcage.ico" Type="Document" URL="../cardcage.ico"/>
 		<Item Name="GUI.vi" Type="VI" URL="../GUI.vi"/>
